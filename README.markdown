@@ -1,4 +1,4 @@
 Less
 ----
 
-Presentation for the Brisbane Wed Desin Meetup on the [Less](http://lesscss.org) stylesheeting language.
+Presentation for the Brisbane Wed Design Meetup on the [Less](http://lesscss.org) stylesheeting language.
