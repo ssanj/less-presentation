@@ -1,0 +1,136 @@
+body {
+  margin: 0 auto;
+  font-family: 'Georgia', Times, serif;
+  font-size: 20px;
+  line-height: 1.6em;
+  padding: 15px;
+  width: 720px;
+
+}
+
+.profiles > header {
+  text-align: left;
+  display: block;
+  line-height: 96px;
+  margin-bottom: 25px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Myriad Pro', 'Droid Serif', 'Georgia', serif;
+  display: inline;
+  margin: 0;
+  font-weight: normal;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+header, footer, section, article {
+  display: block;
+}
+
+a, a:hover {
+  text-decoration: none;
+  border-bottom: 1px dotted #bbb;
+  color: black;
+}
+
+a:hover {
+  color: #b83000;
+}
+
+.profiles h1 {
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.profiles h1 > #ext {
+  color: #b83000;
+}
+
+.profiles header {
+  line-height: normal;
+  margin-bottom: 15px;
+  text-align: left;
+  padding: 0;
+}
+
+.profiles header h1 {
+  font-family: 'Droid Serif', 'Myriad Pro', 'Georgia', sans-serif;
+  border-bottom: 1px dotted #bbb;
+  margin-bottom: 15px;
+  text-align: left;
+  padding: 0;
+  padding-bottom: 5px;
+  font-size: 60px;
+}
+
+.profile {
+  text-decoration: none;
+  font-size: 28px;
+  border: 0;
+  color: black;
+}
+
+.profile:hover {
+  text-decoration: none;
+}
+
+.profile:hover:before {
+  color: black;
+}
+
+.profile:hover:after {
+  color: black;
+}
+
+.profile:before {
+  color: white;
+  border: 0;
+  content: "{";
+}
+
+.profile:after {
+  color: white;
+  border: 0;
+  content: "}";
+}
+
+.profiles {
+  position: fixed;
+  -webkit-padding-start: 0; /*same as padding-left: 0px ?*/
+  bottom: 170px;
+  right: 45px;
+  text-align: right;
+}
+
+.profiles ul { 
+  margin-top: 15px; 
+  padding-left: 0; 
+}
+
+.profiles li, .profiles ul {
+  display: inline;
+}
+
+.profiles li {
+  margin-left:4px;
+  margin-right:4px;
+}
+
+#home {
+  margin: 0;
+  padding: 0;
+}
+
+#home > section {
+  min-width: 720px;
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  padding: 0;
+  height: 800px;
+  width: 960px;
+  background: url(http://cloudhead.io/images/cloudhead.png) no-repeat scroll 30px bottom;
+}

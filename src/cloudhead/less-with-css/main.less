@@ -1,0 +1,146 @@
+//colours
+@lightGray: #bbb;
+@darkRed: #b83000;
+@curlyBraceColour: white;
+@defaultTextColour: black;
+
+//fonts
+@defaultFont: 'Georgia', Times, serif;
+@headingFont: 'Myriad Pro', 'Droid Serif', 'Georgia', serif;
+@profileHeaderFont: 'Droid Serif', 'Myriad Pro', 'Georgia', sans-serif;
+
+body {
+  margin: 0 auto;
+  font-family: @defaultFont;
+  font-size: 20px;
+  line-height: 1.6em;
+  padding: 15px;
+  width: 720px;
+}
+
+h1, h2, h3, h4 {
+  font-family: @headingFont;
+  display: inline;
+  margin: 0;
+  font-weight: normal;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+header, footer, section, article {
+  display: block;
+}
+
+a {
+  .anchor-props;
+
+  &:hover {
+    .anchor-props(@darkRed);
+  }
+}
+
+.anchor-props(@color: @defaultTextColour) {
+  text-decoration: none;
+  border-bottom: 1px dotted @lightGray;
+  color: @color;      
+}
+
+.profiles {  
+  position: fixed;
+  -webkit-padding-start: 0; /*same as padding-left: 0px ?*/
+  bottom: 170px;
+  right: 45px;
+  text-align: right;
+  
+  li {
+    display: inline;
+    margin-left:4px;
+    margin-right:4px;    
+  } 
+  
+  ul {
+    margin-top: 15px; 
+    padding-left: 0; 
+    display: inline;
+  } 
+  
+  h1 {
+    font-size: 42px;
+    font-weight: normal;
+    & > #ext {
+      color: @darkRed;
+    }
+  }
+  
+  & > header {
+    text-align: left;
+    display: block;
+    line-height: 96px;
+    margin-bottom: 25px;
+  }
+  
+  header {
+    line-height: normal;
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 0;
+
+    h1 {
+      font-family: @profileHeaderFont;
+      border-bottom: 1px dotted @lightGray;
+      margin-bottom: 15px;
+      text-align: left;
+      padding: 0;
+      padding-bottom: 5px;
+      font-size: 60px;    
+    }
+  }
+}
+
+.profile {
+  text-decoration: none;
+  font-size: 28px;
+  border: 0;
+  color: @defaultTextColour;
+  
+  &:hover {
+    text-decoration: none;
+    &:before {
+      color: @defaultTextColour;
+    }
+    
+    &:after {
+      color: @defaultTextColour;
+    }
+  }
+  
+  &:before {
+    color: @curlyBraceColour;
+    border: 0;
+    content: "{";
+  }
+  
+  &:after {
+    color: @curlyBraceColour;
+    border: 0;
+    content: "}";
+  }
+}
+
+#home {
+  margin: 0;
+  padding: 0;
+  
+  & > section {
+    min-width: 720px;
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    height: 800px;
+    width: 960px;
+    background: url(http://cloudhead.io/images/cloudhead.png) no-repeat scroll 30px bottom;
+  }
+}
