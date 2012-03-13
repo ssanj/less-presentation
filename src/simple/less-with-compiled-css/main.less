@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Fascinate);
+
+@pageColour: #768C6A;
+@bubbleColour: #91D6BC;
+@bubbleTextColour: white;
+@brisbaneColour: black;
+@bubbleShadowColour: #6f6f68;
+@bubbleFontFamily: 'Fascinate', cursive; 
+@bubbleFontFamilySize: 3em;
+
+@bubbleWidth: 500px;
+@bubbleHeight: 200px;
+
+body {
+  background-color: @pageColour;
+}
+
+.bubble {
+  width: @bubbleWidth;
+  height: @bubbleHeight;
+  margin: (@bubbleHeight * 0.75) auto 0px;
+  background-color: @bubbleColour;
+  border: 5px solid black;
+  .bubbleBorders;
+  .bubbleShadow;
+  text-align: center;
+}
+
+.bubble_text {
+  color: @bubbleTextColour;
+  font-size: @bubbleFontFamilySize;
+  font-family: @bubbleFontFamily;
+  .textShadow;
+  margin-top: 50px;
+}
+
+.textShadow {
+  text-shadow: 2px 2px 1px @bubbleShadowColour;
+}
+
+.bubbleBorders {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;  
+}
+
+.bubbleShadow {
+  -webkit-box-shadow: 5px 5px 1px @bubbleShadowColour;
+  -moz-box-shadow:    5px 5px 1px @bubbleShadowColour;
+  box-shadow:         5px 5px 1px @bubbleShadowColour;  
+}
+
+.brissy {
+  color: @brisbaneColour;
+}

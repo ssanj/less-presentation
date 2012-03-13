@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Fascinate);
+body {
+  background-color: #768c6a;
+}
+.bubble {
+  width: 500px;
+  height: 200px;
+  margin: 150px auto 0px;
+  background-color: #91d6bc;
+  border: 5px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 1px #6f6f68;
+  -moz-box-shadow: 5px 5px 1px #6f6f68;
+  box-shadow: 5px 5px 1px #6f6f68;
+  text-align: center;
+}
+.bubble_text {
+  color: #ffffff;
+  font-size: 3em;
+  font-family: 'Fascinate', cursive;
+  text-shadow: 2px 2px 1px #6f6f68;
+  margin-top: 50px;
+}
+.textShadow {
+  text-shadow: 2px 2px 1px #6f6f68;
+}
+.bubbleBorders {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.bubbleShadow {
+  -webkit-box-shadow: 5px 5px 1px #6f6f68;
+  -moz-box-shadow: 5px 5px 1px #6f6f68;
+  box-shadow: 5px 5px 1px #6f6f68;
+}
+.brissy {
+  color: #000000;
+}
